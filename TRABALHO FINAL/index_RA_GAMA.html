@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bem-vindo à RA II Gama</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            /*font-family: Arial, sans-serif;*/
+            background-color: rgb(236, 251, 236);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .banner {
+            background-image: url("https://www.df.gov.br/wp-conteudo/uploads/2015/10/21838552279_b3d2b98fc6_z.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        form {
+            /* atributos do formulário */
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            /*max-width: 400px;*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="display-4">Bem-vindo a RA II Gama</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#noticias">Notícias</a>
+        <a href="cadastro_RA_GAMA.html" class="tooltip-test" title="Tooltip"">Contato</a>
+    </nav>
+
+    <div class=" banner">
+            <h1 class="display-4">Descubra um pouco da história do Gama</h1>
+            </div>
+            <br>
+            <section id="sobre">
+                <div class="container" style="max-width: 100rem;">
+                    <form>
+                        <h2>Sobre a RA II Gama <br></h2>
+                        <p class="lead"> A Região Administrativa do Gama está localizada em terras que pertenceram às
+                            fazendas do Ipê, Alagado, Ponte
+                            Alta e Gama, tendo esta última dado origem ao nome da cidade.<br>
+                            A RA II foi criada através da Lei n.º 49/89 e do Decreto n.º 11.921/89, que fixa os novos
+                            limites das
+                            Regiões Administrativas do Distrito Federal. <br>
+                            A Região Administrativa do Gama é formada por área urbana e rural. A área urbana está
+                            dividida em 6 (seis)
+                            setores: Norte, Sul, Leste, Oeste, Central e de Indústria. <br>
+                            O projeto da cidade lembra o formato de uma colmeia. As quadras possuem formato hexagonal e,
+                            internamente
+                            um, formato triangular, com uma média de 96 a 100 lotes. Em cada triângulo, há um setor
+                            comercial. <br>
+                            A área rural é formada pelo Núcleo Rural Monjolo, pela Colônia Agrícola Ponte Alta, Córrego
+                            Crispim,
+                            Núcleo Rural Ponte Alta de Baixo, Ponte Alta Norte e Alagado.<br>
+                            A Região Administrativa tem como Santo Padroeiro São Sebastião, com data de Culto Público em
+                            20 de janeiro,
+                            sendo ponto facultativo na Região Administrativa, conforme Lei n.º 2.908, de 05/02/2002.
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+            <section id="galeria">
+                <div class="container" style="max-width: 100rem;">
+                    <h2>Galeria de Fotos do Gama<br></h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 w-100">
+                                <img src="https://www.folhadogama.com.br/wp-content/uploads/2017/07/SQUAD_VIC_GAMA_IMG_AEREA-R01.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">História</h5>
+                                    <p class="card-text">
+                                        Em agosto de 1746, o Bandeirante Antônio Bueno de Azevedo saiu de Paracatu, em
+                                        Minas Gerais,
+                                        chefiando uma grande tropa rumo ao noroeste. Depois de ter atravessado chapadas,
+                                        rios, veredas e
+                                        ribeirões, chegou, no dia 13 de dezembro, num riacho em cujas areias descobriu
+                                        ouro.<br>
+                                        A decisão foi de fundar ali um povoado, o qual recebeu o nome de Santa Luzia, em
+                                        homenagem à
+                                        santa do dia. O riacho ficou conhecido como Rio Vermelho, já que tinha suas
+                                        águas sempre barrentas por
+                                        causa da lavagem do ouro. O povoado de Santa Luzia se transformou no que é a
+                                        atual
+                                        cidade de Luziânia, em Goiás.</p>
+                                    <br>
+                                    <!-- Botão para acionar modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#historia">
+                                        Saiba mais...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 w-100">
+                                <img src="https://static.arboimoveis.com.br/TE0045_JM/area-para-desenvolvimento-imobiliario-m-gama-df-potencial-de-construcao-computavel-ate-m-comercial-ou-industrial1637254911668abyuc.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Colméia</h5>
+                                    <p class="card-text">
+                                        A Região Administrativa do Gama (RA II) é formada por área urbana e rural. O
+                                        projeto da cidade lembra o
+                                        formato de uma colmeia devido ao formato hexagonal das quadras. Integram a área
+                                        rural a Colônia Agrícola
+                                        Ponte Alta, o Núcleo Rural Monjolo, o Córrego Crispim, o Núcleo Rural Ponte Alta
+                                        de Baixo,
+                                        Ponte Alta Norte e Alagado.<br>
+                                        De acordo com dados do Instituto Brasileiro de Geografia e Estatística (IBGE),
+                                        em 1959, havia na
+                                        região pouco mais de 950 pessoas. Desde 2018, segundo pesquisa da Companhia de
+                                        Planejamento (Codeplan),
+                                        mais de 132 mil pessoas compõem a população urbana da cidade.</p>
+                                    <br>
+                                    <!-- Botão para acionar modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#colmeia">
+                                        Saiba mais...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 w-100">
+                                <img src="https://i0.wp.com/gamacidadao.com.br/wp-content/uploads/2014/08/prainha-do-gama.jpg?fit=549%2C365&ssl=1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Parques e biodiversidade</h5>
+                                    <p class="card-text">
+                                        O parque recreativo de Gama, também conhecido como Prainha, é cortado pelas
+                                        corredeiras e cachoeiras
+                                        do Ribeirão de Gama, e também é possível ver e ouvir espécies raras da fauna do
+                                        cerrado da região,
+                                        como lontras, raposas, lobos-guará e algumas espécies de veados.</p>
+                                    <br>
+                                    <!-- Botão para acionar modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#parque">
+                                        Saiba mais...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 w-100">
+                                <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2020/03/cropped-gamagol-belo-escudo-do-gama.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Esportes</h5>
+                                    <p class="card-text">
+                                        Gama ganhou projeção nacional graças ao futebol.<br>
+                                        No fim da década de 1990, a Sociedade Esportiva de Gama escreveu seu nome entre
+                                        os grandes do país,
+                                        vencendo competições e grandes times do eixo Rio-São Paulo. O Estádio Walmir
+                                        Campelo Bezerra, mais
+                                        conhecido por Estádio do Bezerrão que está situado no setor central é sede de
+                                        jogos da Sociedade
+                                        Esportiva do Gama, equipe de maior torcida entre os clubes do DF, e por sua
+                                        estrutura de alto nível
+                                        chegou a ser utilizado até mesmo pela Seleção Brasileira de Futebol em 2008 em
+                                        um
+                                        jogo amistoso contra a Seleção de Portugal. </p>
+                                    <br>
+                                    <!-- Botão para acionar modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#esporte">
+                                        Saiba mais...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal Historia -->
+            <div class="modal fade" id="historia" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">História</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <img src="https://www.folhadogama.com.br/wp-content/uploads/2017/07/SQUAD_VIC_GAMA_IMG_AEREA-R01.jpg"
+                                class="card-img-top" alt="...">
+                            <br>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card-text">
+                                No começo de 1747, a pedido do próprio Bueno, chegou a Santa Luzia o primeiro sacerdote:
+                                o padre Luís da
+                                Gama Mendonça. Supõe-se que, em homenagem ao padre, foi dado o nome "Gama" ao platô e ao
+                                ribeirão.<br>
+                                As terras que atualmente constituem a região administrativa de Gama, pertenciam às
+                                Fazendas do Ipê, Alagado
+                                da Suzana, Ponte Alta e Gama.<br>
+                                Com a transferência da capital do Brasil para o interior do País, as terras dessas
+                                quatro fazendas, foram
+                                desapropriadas pelo governo do estado de Goiás, no período de 1956 a 1958, sob
+                                responsabilidade da Comissão
+                                Goiana de Cooperação para a Mudança da capital do Brasil, tendo, por presidente,
+                                Altamiro de Moura Pacheco. <br>
+                                A sede da Fazenda Gama ficava próxima ao local onde atualmente está o Catetinho
+                                (primeira residência oficial
+                                de Juscelino Kubitschek), porém a cidade veio a ser instalada a oito quilômetros deste
+                                ponto de referência.
+                                O então presidente da república, Juscelino Kubitschek, visitou a Fazenda Gama em 02 de
+                                outubro de 1956,
+                                na ocasião de sua primeira visita à região, onde seria construída Brasília.
+                                Gama possui cerca de 141.911 habitantes (PDAD 2015/2016). <br>
+                                O padroeiro da cidade é São Sebastião, cuja festa litúrgica se dá em 20 de janeiro.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal colmeia -->
+            <div class="modal fade" id="colmeia" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Colmeia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <img src="https://static.arboimoveis.com.br/TE0045_JM/area-para-desenvolvimento-imobiliario-m-gama-df-potencial-de-construcao-computavel-ate-m-comercial-ou-industrial1637254911668abyuc.jpg"
+                                class="card-img-top" alt="...">
+                            <br>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card-text">
+                                O arquiteto Paulo Hungria, em maio de 1960, desenvolveu a planta urbanística da cidade,
+                                na forma de colmeia,
+                                dividindo-a em cinco setores: Norte, Sul, Leste, Oeste e Central.<br>
+                                O Setor Central (para atividades mercantis) não foi detalhado em função das necessidades
+                                futuras.
+                                Porém, coube ao engenheiro José Maciel de Paiva, por ordem do então prefeito Israel
+                                Pinheiro (ex-presidente da Novacap),
+                                iniciadas a partir de setembro de 1960. Foi auxiliado pelo engenheiro José Carlos Godoy,
+                                pelo fiscal Agnelo Dias
+                                Correia (que juntamente com sua mulher são considerados os moradores pioneiros da
+                                cidade),
+                                pelo mestre-de-obras Joaquim Santana, entre outros. A então cidade-satélite foi fundada
+                                no dia 12 de outubro de 1960.<br>
+                                O povoamento inicial foi efetuado com a remoção de 30 famílias residentes na Barragem do
+                                Paranoá, em 1960.
+                                Posteriormente a cidade recebeu grande parte dos moradores da Vila Amaury e da Vila
+                                Planalto.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal parque -->
+            <div class="modal fade" id="parque" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Parque - Prainha</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <img src="https://i0.wp.com/gamacidadao.com.br/wp-content/uploads/2014/08/prainha-do-gama.jpg?fit=549%2C365&ssl=1"
+                                class="card-img-top" alt="...">
+                            <br>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card-text">
+                                A entrada era gratuita e os frequentadores tinham à disposição 744 hectares de área
+                                verde, tanques de água
+                                corrente, um córrego cristalino e muitos pontos de cerrado intocado.<br>
+                                Durante mais de 40 anos, gente de todas as cidades próximas passou por lá em busca de
+                                sombra e água fresca. <br>
+                                Desde 2002, porém, o espaço caiu no esquecimento. O governo pretende revitalizar o
+                                parque e, segundo o Instituto
+                                Brasília Ambiental (Ibram), há um plano de manejo ambiental. Até que saia
+                                definitivamente do papel, o Parque
+                                Recreativo do Gama, popularmente conhecido como Prainha, continuará a ser o resquício de
+                                um cenário paradisíaco
+                                arruinado pela poluição, pela falta de segurança e pelos problemas fundiários que marcam
+                                o DF.<br>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal esporte -->
+            <div class="modal fade" id="esporte" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Esporte</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2020/03/cropped-gamagol-belo-escudo-do-gama.jpg"
+                                class="card-img-top" alt="...">
+                            <br>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card-text">
+                                A Sociedade Esportiva do Gama foi fundada no dia 15 de novembro de 1975 por Hermínio
+                                Ferreira Neves, o Tim,
+                                presidente da equipe amadora Minas Atlético Clube, sendo a primeira equipe profissional
+                                da cidade gamense.
+                                Seu primeiro jogo foi no dia 21 de fevereiro de 1976, na vitória de 2 a 0 sobre o
+                                Humaíta, pelo Torneio Imprensa.<br>
+                                Não tardou muito e a equipe conquistou seus primeiros torneios sendo bicampeão do
+                                Torneio Imprensa 1977/1978 e
+                                sua torcida já era a que mais frequentava os estádios do Distrito Federal.
+                                Em 1979, veio o primeiro título do Campeonato Brasiliense sobre o Brasília Futebol
+                                Clube, que era
+                                tricampeão e o time mais rico de Brasília na época. Foi a vitória de Davi sobre Golias
+                                e, de vez, o
+                                “Gamão do Povão” caiu nas graças da população desportiva, ao ponto de dividir o público
+                                do Estádio Bezerrão,
+                                na partida contra o Flamengo/RJ pelo Campeonato Brasileiro de 1979, reforçado pelas
+                                torcidas do Vasco da Gama,
+                                Fluminense e Botafogo.
+                                <br><br>
+                                <a href="https://www.segama.com.br/historia" target="_blank" class="tooltip-test"
+                                    title="Tooltip">Continue lendo...</a>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="noticias">
+                <div class="container-fluid">
+                    <h2><br>Últimas Notícias<br></h2>
+                    <div class="card text-white bg-success mb-3" style="max-width: 120rem;">
+                        <div class="card-header">
+                            <h3>CHAMAMENTO PÚBLICO PARA AMBULANTES<br></h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A Administração Regional do Gama convida os AMBULANTES interessados em
+                                trabalhar no evento:
+                                JOGO DA ALEGRIA que será realizado no dia 28/07/2024, com horário de início às 15:00h, e
+                                término
+                                previsto para às 19:00h,
+                                no ESTÁDIO VALMIR CAMPELO BEZERRA (BEZERRÃO), localizado no Setor Central do Gama/DF, a
+                                comparecer à
+                                Administração Regional do Gama,
+                                AE s/nº Setor Central, Gama-DF, para se inscreverem e participarem do SORTEIO DAS VAGAS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-danger mb-3" style="max-width: 120rem;">
+                        <div class="card-header">
+                            <h3>Governador Ibaneis Rocha reinaugura o Estádio Bezerrão<br></h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A Na manhã desta terça-feira, o Estádio Valmir Campelo Bezerra, mais
+                                conhecido como Bezerrão,
+                                foi reinaugurado em uma cerimônia marcante liderada pelo Governador do Distrito Federal,
+                                Ibaneis Rocha.
+                                Após um período de fechamento desde 2021, quando se transformou em um Hospital de
+                                Campanha durante a
+                                luta contra a COVID-19,
+                                o estádio passou por uma aguardada reforma que demandou um investimento de mais de R$
+                                3,5 milhões.</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-info mb-3" style="max-width: 120rem;">
+                        <div class="card-header">
+                            <h3>
+                                CHAMAMENTO PÚBLICO PARA O PROCESSO DE SELEÇÃO DOS MEMBROS DA SOCIEDADE CIVIL QUE IRÃO
+                                COMPOR O CONSELHO
+                                LOCAL DE PLANEJAMENTO DA RA DO GAMA<br></h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                A Administração Regional do Gama do Distrito Federal, vem tornar público os
+                                procedimentos para o processo
+                                de escolha dos membros da sociedade civil
+                                que farão parte do Conselho Local de Planejamento (CLP). 3.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 RA II GAMA. Todos os direitos reservados.</p>
+            </footer>
+
+</body>
+
+</html>
